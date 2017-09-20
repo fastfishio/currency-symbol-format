@@ -2,7 +2,6 @@
   "name": "currency-symbol-format",
   "version": "0.1.0",
   "main": "src/Format.js",
-  "private": true,
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
