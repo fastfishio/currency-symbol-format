@@ -1,0 +1,21 @@
+{
+  "name": "currency-symbol-format",
+  "version": "0.1.0",
+  "main": "src/Format.js",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mohammedsabi/currency-symbol-format.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
