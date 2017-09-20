@@ -8,7 +8,7 @@ Get the currency symbol from currency code
 
 ## Usage
 ```
-import {getCurrencyCode, getNativeCode} from './Format.js';
+import {getCurrencyCode, getNativeCode} from 'currency-symbol-format';
 
 getCurrencyCode(currencyCode, locale = optional)
 

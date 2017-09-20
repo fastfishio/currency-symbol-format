@@ -1,6 +1,6 @@
 {
   "name": "currency-symbol-format",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "src/Format.js",
   "dependencies": {
     "react": "^15.6.1",
