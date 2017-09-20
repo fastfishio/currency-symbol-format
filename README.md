@@ -4,7 +4,7 @@ Get the currency symbol from currency code
 
 ## Installation
 
-    npm install currency-symbol-map --save
+    npm install currency-symbol-format --save
 
 ## Usage
 ```
