@@ -1,13 +1,22 @@
 import React from 'react';
 import data from './constant/data.json';
 
-const Format = {
-  getSymbol: function(currencyCode) {
+  function getCurrencyCode(currencyCode, locale = "en") {
     if (typeof currencyCode !== 'string') return undefined;
     const code = currencyCode.toUpperCase();
-    const codeObj = data.hasOwnProperty(code) ? data[code] : undefined;
+    if(!data.hasOwnProperty(code)) return undefined;
+    console.log("sss", data[code]);
+    const codeSymbol = locale && data[code].locale === locale ? data[code].symbol_native : data[code].symbol;
+    return codeSymbol;
+  }
+
+  function getNativeCode(currencyCode) {
+    if (typeof currencyCode !== 'string') return undefined;
+    const code = currencyCode.toUpperCase();
+    const codeObj = data.hasOwnProperty(code) ? data[code].symbol_native : undefined;
     return codeObj;
   }
-};
 
-export default Format;
+
+export {getCurrencyCode};
+export {getNativeCode};

@@ -1,1 +1,25 @@
-#### ReadMe.md
+# currency-symbol-format
+
+Get the currency symbol from currency code
+
+## Installation
+
+    npm install currency-symbol-map --save
+
+## Usage
+```
+import {getCurrencyCode, getNativeCode} from './Format.js';
+
+getCurrencyCode(currencyCode, locale = optional)
+
+getCurrencyCode('AED')
+getCurrencyCode('AED', 'ar')
+getCurrencyCode('AED', 'en')
+getNativeCode('AED')
+getCurrencyCode('INR')
+
+```
+
+#### Credit
+
+Currency data : http://www.localeplanet.com/api/auto/currencymap.html
