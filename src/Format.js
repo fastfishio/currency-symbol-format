@@ -5,8 +5,7 @@ import data from './constant/data.json';
     if (typeof currencyCode !== 'string') return undefined;
     const code = currencyCode.toUpperCase();
     if(!data.hasOwnProperty(code)) return undefined;
-    console.log("sss", data[code]);
-    const codeSymbol = locale && data[code].locale === locale ? data[code].symbol_native : data[code].symbol;
+    const codeSymbol = locale && data[code].locale && data[code].locale === locale ? data[code].symbol_native : data[code].symbol;
     return codeSymbol;
   }
 
